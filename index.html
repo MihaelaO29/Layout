@@ -9,6 +9,7 @@
 </head>
 
 <body>
+
     <div class="container">
 
         <div class="ebook-info">
@@ -67,18 +68,21 @@
                                 <li data-code="+33" data-flag="images/france.png">
                                     <img class="country-icon" src="images/france.png" alt="France"> France (+33)
                                 </li>
-
                             </ul>
 
-                            <input class="phone-details" type="tel" id="phone" name="phone"
-                                placeholder="Enter phone number" required>
+                            <input id="phone" type="tel" name="phone" placeholder="Phone *" required>
                         </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="company"></label>
+                        <input class="form-input" type="text" name="company" placeholder="Company *" required>
                     </div>
 
                     <div class="form-group">
                         <label for="country"></label>
                         <select class="country" name="country" required>
-                            <option value="" disabled selected>Country</option>
+                            <option value="" disabled selected>Country *</option>
                             <option value="Romania">Romania</option>
                             <option value="Italy">Italy</option>
                             <option value="Germany">Germany</option>
@@ -89,7 +93,7 @@
                     <div class="form-group">
                         <label for="state"></label>
                         <select id="state-select" class="state" name="state" required>
-                            <option value="" disabled selected>State</option>
+                            <option class="option-state" value="" disabled selected>State *</option>
                             <option value="Bucharest">Bucharest</option>
                             <option value="Cluj">Cluj</option>
                             <option value="Timis">Timis</option>
@@ -107,6 +111,35 @@
                 </div>
             </div>
         </div>
+
+    </div>
+
+
+    <div class="description">
+        <div>
+        <p class="">Recoverability isn't a given with Microsoft 365</p>
+        <p> The fact that organizations need to back up their Microsoft 365 deployments has been well established.
+            As important as backups might be, however, there is one critical item that always seems to get left out
+            of the conversation. That item is recoverability.</p>
+        </div>
+
+        <div>
+            <img>
+
+            <div>
+                <p>Microsoft 365 data recovery capabilities vary widely from one backup application to another. </p>
+                <p>Download this mini e-book to learn:</p>
+                <div>
+                    • What's built into Microsoft 365 and when a third party backup is needed
+                    • Nine best practices for Microsoft 365 data recovery
+                    • Key recovery considerations when choosing how and who will recover your Microsoft 365 data
+                </div>
+                <button type="submit" class="second-submit-btn">READ NOW</button>
+            </div>
+
+        </div>
+
+
 
     </div>
 

@@ -4,7 +4,6 @@ body {
     padding: 0;
 }
 
-
 .container {
     height: 610px;
     background-image: url('images/background.png');
@@ -34,7 +33,6 @@ body {
     padding: 10px 0 30px 0;
 }
 
-
 .ebook-info {
     display: flex;
     flex-direction: column;
@@ -46,7 +44,6 @@ body {
     color: #ffffff;
     letter-spacing: 1px;
 }
-
 
 .ebook-title {
     font-size: 43px;
@@ -71,7 +68,6 @@ body {
     margin-bottom: 15px;
 }
 
-
 .ebook-assets {
     display: flex;
     flex-direction: column;
@@ -80,7 +76,6 @@ body {
     margin: 0 30px 0 100px;
 }
 
-
 .form-input,
 select {
     width: 100%;
@@ -88,6 +83,10 @@ select {
     border: 1px solid #ccc;
     box-sizing: border-box;
     border-radius: 2px;
+}
+
+.form-input::placeholder {
+    color: rgb(0, 0, 0);
 }
 
 .form-group {
@@ -123,7 +122,6 @@ select {
     background-color: #372cff;
 }
 
-
 .phone-input {
     display: flex;
     align-items: center;
@@ -133,9 +131,9 @@ select {
     position: relative;
 }
 
-.phone-details{
-    border:0;
-    outline: none; 
+#phone {
+    border: 0;
+    outline: none;
 }
 
 .flag-container {
@@ -143,6 +141,7 @@ select {
     align-items: center;
     cursor: pointer;
     padding: 5px;
+    font-size: 14px;
 }
 
 .flag-container img {
@@ -151,7 +150,7 @@ select {
     margin-right: 5px;
 }
 
-.country-icon{
+.country-icon {
     height: 17px;
     margin-right: 8px;
 }
@@ -167,18 +166,17 @@ select {
     list-style: none;
     padding: 0;
     margin: 0;
-    z-index: 10;
+    z-index: 4;
 }
-
-/* .selected-code,
-li{
-    font-size: 12px;
-} */
 
 .country-list li {
     display: flex;
     align-items: center;
     padding: 8px;
     cursor: pointer;
+    font-size: 14px;
 }
 
+.description{
+    padding: 90px 240px;
+}
