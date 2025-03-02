@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="ebook-info">
+            <img class="logo" src="images/veeam.png" alt="Logo Veeam">
+
+            <div lass="ebook-text">
+                <p class="ebook-type">MINI E-BOOK</p>
+                <p class="ebook-title">Conversational Microsoft 365 Recovery Best Practices</p>
+                <p class="ebook-author">By Brien Posey - Microsoft MVP</p>
+            </div>
+        </div>
+
+        <div class="ebook-assets">
+            <img class="partner-logo" src="images/partner_logo.png" alt="Partner Logo">
+            <img class="illustration" src="images/illustration.png" alt="Ilustration">
+        </div>
+
+        <div class="form-container">
+            <div class="form-wrapper">
+                <h3 class="form-title">Register to download</h3>
+                <form class="registration-form">
+                    <div class="form-group">
+                        <label for="firstname"></label>
+                        <input class="form-input" type="text" name="firstname" placeholder="First name *" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastname"></label>
+                        <input class="form-input" type="text" name="lastname" placeholder="Last name *" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email"></label>
+                        <input class="form-input" type="email" name="email" placeholder="Business Email *" required>
+                    </div>
+
+                    <div class="form-group">
+
+                        <div class="phone-input">
+                            <div class="flag-container" id="flag-selector">
+                                <img id="selected-flag" src="images/romania.png" alt="Flag">
+                                <span id="selected-code">+40</span>
+                            </div>
+
+                            <ul class="country-list">
+                                <li data-code="+40" data-flag="images/romania.png">
+                                    <img class="country-icon" src="images/romania.png" alt="Romania"> Romania (+40)
+                                </li>
+                                <li data-code="+1" data-flag="images/italy.png">
+                                    <img class="country-icon" src="images/italy.png" alt="Italy"> Italy (+1)
+                                </li>
+                                <li data-code="+49" data-flag="images/germany.png">
+                                    <img class="country-icon" src="images/germany.png" alt="Germany"> Germany (+49)
+                                </li>
+
+                                <li data-code="+33" data-flag="images/france.png">
+                                    <img class="country-icon" src="images/france.png" alt="France"> France (+33)
+                                </li>
+
+                            </ul>
+
+                            <input class="phone-details" type="tel" id="phone" name="phone"
+                                placeholder="Enter phone number" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="country"></label>
+                        <select class="country" name="country" required>
+                            <option value="" disabled selected>Country</option>
+                            <option value="Romania">Romania</option>
+                            <option value="Italy">Italy</option>
+                            <option value="Germany">Germany</option>
+                            <option value="France">France</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="state"></label>
+                        <select id="state-select" class="state" name="state" required>
+                            <option value="" disabled selected>State</option>
+                            <option value="Bucharest">Bucharest</option>
+                            <option value="Cluj">Cluj</option>
+                            <option value="Timis">Timis</option>
+                            <option value="Iasi">Iasi</option>
+                        </select>
+                    </div>
+
+                </form>
+
+                <div class="form-footer">
+                    <div class="privacy-notice">By submitting, you are agreeing to have your personal information
+                        managed
+                        in accordance with the terms of Veeam's <span class="highlight">Privacy Notice.</span></div>
+                    <button type="submit" class="submit-btn">READ NOW</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
