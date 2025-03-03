@@ -241,3 +241,44 @@ select {
     width: 165px;
     height: 37px;
 }
+
+.card-container {
+    padding: 80px 240px;
+}
+
+.card-title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(35 34 34);
+}
+
+.card-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    border: solid 1px black;
+    width: 315px;
+    border-top: 4px solid #00D15F; 
+    border-right: 0 solid  #E0E0E0; 
+    border-bottom: 0 solid  #E0E0E0; 
+    border-left: 0 solid  #E0E0E0; 
+    box-shadow: 0 9px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-img{
+    height: 30px;
+    margin: 0 15px;
+}
+
+.card-text{
+    font-size: 16px;
+    font-weight: bold;
+}
+
