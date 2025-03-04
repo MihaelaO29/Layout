@@ -7,183 +7,203 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&family=Great+Vibes&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+    <div class="main-container">
+        <div class="container">
+            <div class="background-overlay"></div>
 
-    <div class="container">
+            <div class="ebook-content">
+                <div class="ebook-separator">
+                    <div class="ebook-info">
+                        <img class="logo" src="images/veeam.png" alt="Logo Veeam">
 
-        <div class="ebook-info">
-            <img class="logo" src="images/veeam.png" alt="Logo Veeam">
-
-            <div lass="ebook-text">
-                <p class="ebook-type">MINI E-BOOK</p>
-                <div class="ebook-title">Conversational Microsoft 365 Recovery Best Practices</div>
-                <p class="ebook-author">By Brien Posey - Microsoft MVP</p>
-            </div>
-        </div>
-
-        <div class="ebook-assets">
-            <img class="partner-logo" src="images/partner_logo.png" alt="Partner Logo">
-            <img class="illustration" src="images/illustration.png" alt="Ilustration">
-        </div>
-
-        <div class="form-container">
-            <div class="form-wrapper">
-                <div class="form-title">Register to download</div>
-                <form class="registration-form">
-                    <div class="form-group">
-                        <label for="firstname"></label>
-                        <input class="form-input" type="text" name="firstname" placeholder="First name *" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="lastname"></label>
-                        <input class="form-input" type="text" name="lastname" placeholder="Last name *" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email"></label>
-                        <input class="form-input" type="email" name="email" placeholder="Business Email *" required>
-                    </div>
-
-                    <div class="form-group">
-
-                        <div class="phone-input">
-                            <div class="flag-container" id="flag-selector">
-                                <img id="selected-flag" src="images/romania.png" alt="Flag">
-                                <span id="selected-code">+40</span>
-                            </div>
-
-                            <ul class="country-list">
-                                <li data-code="+40" data-flag="images/romania.png">
-                                    <img class="country-icon" src="images/romania.png" alt="Romania"> Romania (+40)
-                                </li>
-                                <li data-code="+1" data-flag="images/italy.png">
-                                    <img class="country-icon" src="images/italy.png" alt="Italy"> Italy (+1)
-                                </li>
-                                <li data-code="+49" data-flag="images/germany.png">
-                                    <img class="country-icon" src="images/germany.png" alt="Germany"> Germany (+49)
-                                </li>
-
-                                <li data-code="+33" data-flag="images/france.png">
-                                    <img class="country-icon" src="images/france.png" alt="France"> France (+33)
-                                </li>
-                            </ul>
-
-                            <input id="phone" type="tel" name="phone" placeholder="Phone *" required>
+                        <div class="ebook-text">
+                            <p class="ebook-type">MINI E-BOOK</p>
+                            <div class="ebook-title">Conversational Microsoft 365 Recovery Best Practices</div>
+                            <p class="ebook-author">By Brien Posey - Microsoft MVP</p>
                         </div>
                     </div>
 
-                    <div class="form-group">
-                        <label for="company"></label>
-                        <input class="form-input" type="text" name="company" placeholder="Company *" required>
+                    <div class="ebook-assets">
+                        <img class="partner-logo" src="images/partner_logo.png" alt="Partner Logo">
+                        <img class="partner-logo-alt" src="images/alt.png" alt="Alternative Parner Logo">
+                        <img class="illustration" src="images/illustration.png" alt="Ilustration">
                     </div>
+                </div>
+                <div class="form-container">
+                    <div class="form-wrapper">
+                        <div class="form-title">Register to download</div>
+                        <form class="registration-form">
+                            <div class="form-group">
+                                <label for="firstname"></label>
+                                <input class="form-input" type="text" name="firstname" placeholder="First name *"
+                                    required>
+                            </div>
 
-                    <div class="form-group">
-                        <label for="country"></label>
-                        <select class="country" name="country" required>
-                            <option value="" disabled selected>Country *</option>
-                            <option value="Romania">Romania</option>
-                            <option value="Italy">Italy</option>
-                            <option value="Germany">Germany</option>
-                            <option value="France">France</option>
-                        </select>
+                            <div class="form-group">
+                                <label for="lastname"></label>
+                                <input class="form-input" type="text" name="lastname" placeholder="Last name *"
+                                    required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email"></label>
+                                <input class="form-input" type="email" name="email" placeholder="Business Email *"
+                                    required>
+                            </div>
+
+                            <div class="form-group">
+
+                                <div class="phone-input">
+                                    <div class="flag-container" id="flag-selector">
+                                        <img id="selected-flag" src="images/romania.png" alt="Flag">
+                                        <span id="selected-code">+40</span>
+                                    </div>
+
+                                    <ul class="country-list">
+                                        <li data-code="+40" data-flag="images/romania.png">
+                                            <img class="country-icon" src="images/romania.png" alt="Romania"> Romania
+                                            (+40)
+                                        </li>
+                                        <li data-code="+1" data-flag="images/italy.png">
+                                            <img class="country-icon" src="images/italy.png" alt="Italy"> Italy (+1)
+                                        </li>
+                                        <li data-code="+49" data-flag="images/germany.png">
+                                            <img class="country-icon" src="images/germany.png" alt="Germany"> Germany
+                                            (+49)
+                                        </li>
+
+                                        <li data-code="+33" data-flag="images/france.png">
+                                            <img class="country-icon" src="images/france.png" alt="France"> France (+33)
+                                        </li>
+                                    </ul>
+
+                                    <input id="phone" type="tel" name="phone" placeholder="Phone *" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="company"></label>
+                                <input class="form-input" type="text" name="company" placeholder="Company *" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="country" for="country"></label>
+                                <select class="country-select" name="country" required>
+                                    <option value="" disabled selected>Country *</option>
+                                    <option value="Romania">Romania</option>
+                                    <option value="Italy">Italy</option>
+                                    <option value="Germany">Germany</option>
+                                    <option value="France">France</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="state" for="state"></label>
+                                <select class="state-select" name="state" required>
+                                    <option class="option-state" value="" disabled selected>State *</option>
+                                    <option value="Bucharest">Bucharest</option>
+                                    <option value="Cluj">Cluj</option>
+                                    <option value="Timis">Timis</option>
+                                    <option value="Iasi">Iasi</option>
+                                </select>
+                            </div>
+
+                        </form>
+
+                        <div class="form-footer">
+                            <div class="privacy-notice">By submitting, you are agreeing to have your personal
+                                information
+                                managed
+                                in accordance with the terms of Veeam's <span class="highlight">Privacy Notice.</span>
+                            </div>
+                            <button type="submit" class="submit-btn">READ NOW</button>
+                        </div>
                     </div>
-
-                    <div class="form-group">
-                        <label for="state"></label>
-                        <select id="state-select" class="state" name="state" required>
-                            <option class="option-state" value="" disabled selected>State *</option>
-                            <option value="Bucharest">Bucharest</option>
-                            <option value="Cluj">Cluj</option>
-                            <option value="Timis">Timis</option>
-                            <option value="Iasi">Iasi</option>
-                        </select>
-                    </div>
-
-                </form>
-
-                <div class="form-footer">
-                    <div class="privacy-notice">By submitting, you are agreeing to have your personal information
-                        managed
-                        in accordance with the terms of Veeam's <span class="highlight">Privacy Notice.</span></div>
-                    <button type="submit" class="submit-btn">READ NOW</button>
                 </div>
             </div>
         </div>
 
-    </div>
 
 
-    <div class="description">
-        <div class="description-wrapper">
-            <p class="decription-title">Recoverability isn't a given with Microsoft 365</p>
-            <p class="description-text"> The fact that organizations need to back up their Microsoft 365 deployments has
-                been well established.
-                As important as backups might be, however, there is one critical item that always seems to get left out
-                of the conversation. That item is recoverability.</p>
-        </div>
-
-        <div class="description-content">
-            <div class="description-image">
-                <img class="description-image-file" src="images/partner_details.png" alt="Ilustration">
+        <div class="description">
+            <div class="description-wrapper">
+                <p class="decription-title">Recoverability isn't a given with Microsoft 365</p>
+                <p class="description-text"> The fact that organizations need to back up their Microsoft 365 deployments
+                    has
+                    been well established.
+                    As important as backups might be, however, there is one critical item that always seems to get left
+                    out
+                    of the conversation. That item is recoverability.</p>
             </div>
 
-            <div class="description-details">
-                <p class="description-subtitle">Microsoft 365 data recovery capabilities vary widely from one backup
-                    application to another. </p>
-                <div class="description-intro">Download this mini e-book to learn:</div>
-                <ul class="description-list">
-                    <li class="description-list-item">What's built into Microsoft 365 and when a third-party backup is
-                        needed</li>
-                    <li class="description-list-item">Nine best practices for Microsoft 365 data recovery</li>
-                    <li class="description-list-item">Key recovery considerations when choosing how and who will recover
-                        your Microsoft 365 data</li>
-                </ul>
-                <button type="submit" class="description-btn">READ NOW</button>
-            </div>
-        </div>
-    </div>
+            <div class="description-content">
+                <div class="description-image">
+                    <img class="description-image-file" src="images/partner_details.png" alt="Ilustration">
 
+                </div>
 
-    <div class="card-container">
-        <p class="card-title">Objectives</p>
-        <div class="card-wrapper">
-            <div class="card">
-                <img class="card-img" src="images/like.png" alt="Thumbs Up Icon">
-                <p class="card-text">Generate leads</p>
-            </div>
+                <div class="description-details">
+                    <p class="description-subtitle">Microsoft 365 data recovery capabilities vary widely from one backup
+                        application to another. </p>
+                    <div class="description-intro">Download this mini e-book to learn:</div>
+                    <ul class="description-list">
+                        <li class="description-list-item">What's built into Microsoft 365 and when a third-party backup
+                            is
+                            needed</li>
+                        <li class="description-list-item">Nine best practices for Microsoft 365 data recovery</li>
+                        <li class="description-list-item">Key recovery considerations when choosing how and who will
+                            recover
+                            your Microsoft 365 data</li>
+                    </ul>
+                    <button type="submit" class="description-btn">READ NOW</button>
+                </div>
 
-            <div class="card">
-                <img class="card-img" src="images/user.png" alt="User Icon">
-                <p class="card-text">Increase customer loyalty</p>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="images/money.png" alt="Dollar Icon">
-                <p class="card-text">Achieve a quicker sales cycle</p>
             </div>
         </div>
-        <img class="decoration" src="images/vector.png" alt="Decoration" />
-    </div>
 
+        <div class="card-container">
+            <p class="card-title">Objectives</p>
+            <div class="card-wrapper">
+                <div class="card">
+                    <img class="card-img" src="images/like.png" alt="Thumbs Up Icon">
+                    <p class="card-text">Generate leads</p>
+                </div>
 
-    <div class="footer-container">
-        <div class="privacy-policy">©2023 Veeam® Software | Privacy Policy & Cookies | EULA | Licensing Policy</div>
+                <div class="card">
+                    <img class="card-img" src="images/user.png" alt="User Icon">
+                    <p class="card-text">Increase customer loyalty</p>
+                </div>
 
-        <div class="social-icons">
-            <img class="social-icon" src="images/instagram.png" alt="Instagram">
-            <img class="social-icon" src="images/x.png" alt="Twitter">
-            <img class="social-icon" src="images/facebook.png" alt="Facebook">
-            <img class="social-icon" src="images/linkedin.png" alt="Linkedin">
-            <img class="social-icon" src="images/spiceworks.png" alt="Spiceworks">
-            <img class="social-icon" src="images/youtube.png" alt="Youtube">
+                <div class="card">
+                    <img class="card-img" src="images/money.png" alt="Dollar Icon">
+                    <p class="card-text">Achieve a quicker sales cycle</p>
+                </div>
+            </div>
+            <img class="decoration" src="images/vector.png" alt="Decoration" />
         </div>
-    </div>
 
+
+        <div class="footer-container">
+            <div class="privacy-policy">©2023 Veeam® Software | Privacy Policy & Cookies | EULA | Licensing Policy</div>
+
+            <div class="social-icons">
+                <img class="social-icon" src="images/instagram.png" alt="Instagram">
+                <img class="social-icon" src="images/x.png" alt="Twitter">
+                <img class="social-icon" src="images/facebook.png" alt="Facebook">
+                <img class="social-icon" src="images/linkedin.png" alt="Linkedin">
+                <img class="social-icon" src="images/spiceworks.png" alt="Spiceworks">
+                <img class="social-icon" src="images/youtube.png" alt="Youtube">
+            </div>
+        </div>
+
+    </div>
 </body>
 <script src="script.js"></script>
 

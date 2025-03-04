@@ -1,34 +1,128 @@
 body {
     font-family: "Carlito", sans-serif;
-    margin: 0;
+    overflow-x: hidden;
     padding: 0;
+    margin: 0;
+}
+
+.main-container {
+    padding: 0 15%;
 }
 
 .container {
+    position: relative;
+    width: 100%;
+    min-height: 610px;
+    display: flex;
+    justify-content: center;
+}
+
+.ebook-content {
+    display: flex;
+    padding-top: 50px;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+
+    @media (max-width: 1500px) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media (max-width: 800px) {
+        padding-top: 70px;
+    }
+}
+
+.ebook-separator {
+    display: flex;
+
+    @media (max-width: 1500px) {
+        justify-content: center;
+        height: 600px;
+    }
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    width: 100vw;
     height: 610px;
     background-image: url('images/background.png');
     background-size: cover;
     background-position: center;
-    display: flex;
-    padding: 70px 240px 0px 240px;
-    position: relative;
-    box-sizing: border-box;
+
+    @media (max-width: 1500px) {
+        justify-content: center;
+        height: 700px;
+    }
 }
+
 
 .form-container {
-    position: relative;
+    position: absolute;
+    bottom: -23px;
+    right: 50px;
+    z-index: 3;
+    width: 330px;
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: 1500px) {
+        position: static;
+        margin-top: 150px;
+        width: 300px;
+    }
+
+    @media (max-width: 600px) {
+        max-width: 270px;
+    }
+
+    @media (max-width: 400px) {
+        max-width: 250px;
+    }
 }
 
-.form-title{
+
+.ebook-text {
+    width: 350px;
+
+    @media (max-width: 800px) {
+        margin-top: 55px;
+    }
+
+    @media (max-width: 600px) {
+        width: 250px;
+    }
+
+    @media (max-width: 500px) {
+        width: 190px;
+    }
+
+    @media (max-width: 400px) {
+        width: 145px;
+    }
+}
+
+.form-title {
     color: rgb(35 34 34);
     font-size: 23px;
     font-weight: bold;
-    margin: 20px 0 10px 0;
+    margin: 12px 0 10px 0;
+
+    @media (max-width: 600px) {
+        font-size: 20px;
+    }
+
+    @media (max-width: 400px) {
+        font-size: 18px;
+    }
 }
 
 .form-wrapper {
-    background-color: white;
-    max-width: 330px;
+    background-color: rgb(255, 255, 255);
+    max-width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -36,7 +130,7 @@ body {
     box-shadow: 0 22px 21px rgb(0 0 0 / 17%);
     position: relative;
     z-index: 2;
-    padding: 10px 0 30px 0;
+    padding: 10px 0 35px 0;
 }
 
 .ebook-info {
@@ -49,32 +143,103 @@ body {
     font-size: 20px;
     color: #ffffff;
     letter-spacing: 1px;
-}
 
+    @media (max-width: 800px) {
+        font-size: 18px;
+    }
+
+    @media (max-width: 400px) {
+        font-size: 16px;
+    }
+}
 
 .ebook-title {
     font-size: 52px;
     font-weight: bold;
     color: #00D15F;
-    width: 350px;
     letter-spacing: 1px;
     line-height: 0.9;
     margin: 40px 0;
+
+    @media (max-width: 600px) {
+        font-size: 40px;
+    }
+
+    @media (max-width: 600px) {
+        font-size: 35px;
+    }
+
+    @media (max-width: 500px) {
+        font-size: 30px;
+    }
+
+    @media (max-width: 400px) {
+        font-size: 25px;
+    }
+
+    @media (max-width: 300px) {
+        font-size: 22px;
+    }
+
+
 }
 
 .logo {
     width: 130px;
     margin-bottom: 40px;
+
+    @media (max-width: 800px) {
+        width: 120px;
+    }
+
+    @media (max-width: 500px) {
+        width: 80px;
+    }
 }
 
 
 .partner-logo {
     width: 190px;
+
+    @media (max-width: 600px) {
+        width: 170px;
+    }
+
+    @media (max-width: 500px) {
+        width: 135px;
+    }
+
+    @media (max-width: 400px) {
+        display: none;
+    }
+}
+
+
+.partner-logo-alt {
+    display: none;
+
+    @media (max-width: 400px) {
+        display: block;
+        width: 90px;
+    }
 }
 
 .illustration {
     width: 170px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+
+    @media (max-width: 800px) {
+        width: 145px;
+        margin-bottom: 140px;
+    }
+
+    @media (max-width: 500px) {
+        width: 120px;
+    }
+
+    @media (max-width: 400px) {
+        width: 100px;
+    }
 }
 
 .ebook-assets {
@@ -82,7 +247,15 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    margin: 0 30px 0 100px;
+    margin-left: 100px;
+
+    @media (max-width: 1500px) {
+        margin-left: 140px;
+    }
+
+    @media (max-width: 800px) {
+        margin-left: 0;
+    }
 }
 
 .form-input,
@@ -92,6 +265,10 @@ select {
     border: 1px solid #ccc;
     box-sizing: border-box;
     border-radius: 2px;
+
+    @media (max-width: 600px) {
+        font-size: 11px;
+    }
 }
 
 .form-input::placeholder {
@@ -112,7 +289,7 @@ select {
 
 .privacy-notice {
     font-size: 12px;
-    padding: 0px 2px 15px 2px;
+    padding: 0px 2px 17px 2px;
     line-height: 1.4;
 }
 
@@ -123,12 +300,17 @@ select {
 
 .submit-btn {
     width: 100%;
-    height: 35px;
+    height: 37px;
     font-size: 15px;
     border-radius: 5px;
     border: 0;
     color: #ffffff;
     background-color: #372cff;
+    cursor: pointer;
+
+    @media (max-width: 600px) {
+        font-size: 14px;
+    }
 }
 
 .phone-input {
@@ -143,6 +325,10 @@ select {
 #phone {
     border: 0;
     outline: none;
+
+    @media (max-width: 600px) {
+        font-size: 11px;
+    }
 }
 
 .flag-container {
@@ -186,18 +372,39 @@ select {
     font-size: 14px;
 }
 
+.state-select,
+.country-select {
+    cursor: pointer;
+}
+
 .description {
-    padding: 80px 240px;
+    padding: 80px 0;
 }
 
 .decription-title {
     font-size: 30px;
     font-weight: 700;
     color: rgb(35 34 34);
+
+    @media (max-width: 600px) {
+        font-size: 25px;
+    }
+
+    @media (max-width: 400px) {
+        font-size: 20px;
+    }
 }
 
 .description-text {
     font-size: 18px;
+
+    @media (max-width: 600px) {
+        font-size: 16px;
+    }
+
+    @media (max-width: 400px) {
+        font-size: 14px;
+    }
 }
 
 .description-content {
@@ -205,6 +412,10 @@ select {
     align-items: center;
     justify-content: space-between;
     margin-top: 30px;
+
+    @media (max-width: 800px) {
+        flex-direction: column;
+    }
 }
 
 .description-image,
@@ -212,15 +423,29 @@ select {
     width: 50%;
     display: flex;
     justify-content: center;
+
+    @media (max-width: 800px) {
+        width: 100%;
+        align-items: center;
+    }
 }
 
 .description-image-file {
     width: 220px;
+    cursor: pointer;
+
+    @media (max-width: 800px) {
+        width: 180px;
+    }
 }
 
 .description-details {
     flex-direction: column;
     padding: 0px 30px;
+
+    @media (max-width: 800px) {
+        padding: 0;
+    }
 }
 
 .description-subtitle {
@@ -228,13 +453,37 @@ select {
     font-size: 21px;
     color: rgb(35 34 34);
 
+    @media (max-width: 600px) {
+        font-size: 18px;
+    }
+
+    @media (max-width: 400px) {
+        font-size: 16px;
+    }
 }
 
 .description-intro {
     margin-bottom: 15px;
     font-size: 18px;
+
+    @media (max-width: 600px) {
+        font-size: 16px;
+    }
+
+    @media (max-width: 400px) {
+        font-size: 14px;
+    }
 }
 
+.description-list {
+    @media (max-width: 600px) {
+        font-size: 16px;
+    }
+
+    @media (max-width: 400px) {
+        font-size: 14px;
+    }
+}
 
 .description-list-item {
     margin-bottom: 10px;
@@ -248,21 +497,42 @@ select {
     background-color: #372cff;
     width: 165px;
     height: 37px;
+    cursor: pointer;
+
+    @media (max-width: 600px) {
+        font-size: 14px;
+        width: 140px;
+        height: 30px;
+    }
 }
 
 .card-container {
-    padding: 20px 240px 70px 240px;
+    padding: 20px 0 70px 0;
     position: relative;
+
+    @media (max-width: 800px) {
+        padding: 0 0 60px 0;
+    }
 }
 
-.decoration{
-    position:absolute;
-    right: 0;
+.decoration {
+    position: absolute;
+    right: calc(-15vw);
     bottom: 0;
-    width: 200px;
+    width: 12vw;
+    max-width: 200px;
+
+    @media (max-width: 1500px) {
+        width: 10vw;
+    }
+
+    @media (max-width: 1100px) {
+        display: none;
+    }
+
 }
 
-.card-title{
+.card-title {
     text-align: center;
     font-size: 30px;
     font-weight: 700;
@@ -273,6 +543,10 @@ select {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 1100px) {
+        flex-direction: column;
+    }
 }
 
 .card {
@@ -281,40 +555,78 @@ select {
     height: 70px;
     border: solid 1px black;
     width: 315px;
-    border-top: 4px solid #00D15F; 
-    border-right: 0 solid  #E0E0E0; 
-    border-bottom: 0 solid  #E0E0E0; 
-    border-left: 0 solid  #E0E0E0; 
+    border-top: 4px solid #00D15F;
+    border-right: 0 solid #E0E0E0;
+    border-bottom: 0 solid #E0E0E0;
+    border-left: 0 solid #E0E0E0;
     box-shadow: 0 9px 10px rgba(0, 0, 0, 0.1);
+
+    @media (max-width: 1500px) {
+        height: 50px;
+        width: 250px;
+    }
+
+    @media (max-width: 1100px) {
+        margin-bottom: 45px;
+    }
+
+    @media (max-width: 600px) {
+        width: 240px;
+        height: 45px;
+        font-size: 12px;
+    }
 }
 
-.card-img{
+.card-img {
     height: 30px;
     margin: 0 15px;
 }
 
-.card-text{
+.card-text {
     font-size: 16px;
     font-weight: bold;
+
+    @media (max-width: 1500px) {
+        font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+        font-size: 12px;
+    }
 }
 
-.footer-container{
-    padding: 35px 240px 30px 240px;
+.footer-container {
+    padding: 35px 0 30px 0;
     display: flex;
     justify-content: space-between;
-     align-items: center;
+    align-items: center;
+
+    @media (max-width: 1000px) {
+        flex-direction: column;
+    }
+
 }
 
-.privacy-policy{
+.privacy-policy {
     font-size: 13px;
+
+    @media (max-width: 1000px) {
+        order: 2;
+        text-align: center;
+    }
 }
 
-.social-icons{
-display: flex;
-align-items: center;
+.social-icons {
+    display: flex;
+    align-items: center;
 }
 
-.social-icon{
-    margin-right: 20px;
+.social-icon {
+    margin: 0 10px 0 10px;
     width: 20px;
+
+    @media (max-width: 1000px) {
+        margin-bottom: 50px;
+        order: 1;
+    }
 }

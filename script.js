@@ -11,7 +11,17 @@ document.querySelectorAll(".country-list li").forEach(item => {
     });
 });
 
+document.querySelector('.description-btn').addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector('.form-container').scrollIntoView({
+        behavior: 'smooth',
+        block: 'center'
+    });
+});
 
-document.getElementById('phone').addEventListener('input', (event) => {
-    event.target.value = event.target.value.replace(/\D/g, '');
+document.querySelector('.description-image-file').addEventListener('click', function () {
+    document.querySelector('.form-container').scrollIntoView({
+        behavior: 'smooth',
+        block: 'center'
+    });
 });
