@@ -25,3 +25,22 @@ document.querySelector('.description-image-file').addEventListener('click', func
         block: 'center'
     });
 });
+
+
+const modal = document.querySelector(".modal");
+const img = document.querySelector(".illustration");
+const closeBtn = document.getElementById("closeModal");
+
+img.addEventListener('click', () => {
+    modal.style.display = "block";
+});
+
+closeBtn.addEventListener('click', () => {
+    modal.style.display = "none";
+});
+
+window.addEventListener('keydown', (event) => {
+    if (event.key === "Escape") {
+        modal.style.display = "none";
+    }
+});
