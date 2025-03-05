@@ -25,12 +25,14 @@ body {
   z-index: 1;
   width: 100%;
 }
+
 @media (max-width: 1500px) {
   .ebook-content {
     flex-direction: column;
     align-items: center;
   }
 }
+
 @media (max-width: 800px) {
   .ebook-content {
     padding-top: 70px;
@@ -40,6 +42,7 @@ body {
 .ebook-separator {
   display: flex;
 }
+
 @media (max-width: 1500px) {
   .ebook-separator {
     justify-content: center;
@@ -56,6 +59,7 @@ body {
   background-size: cover;
   background-position: center;
 }
+
 @media (max-width: 1500px) {
   .background-overlay {
     justify-content: center;
@@ -72,6 +76,7 @@ body {
   display: flex;
   justify-content: center;
 }
+
 @media (max-width: 1500px) {
   .form-container {
     position: static;
@@ -79,11 +84,13 @@ body {
     width: 300px;
   }
 }
+
 @media (max-width: 600px) {
   .form-container {
     max-width: 270px;
   }
 }
+
 @media (max-width: 400px) {
   .form-container {
     max-width: 250px;
@@ -93,21 +100,25 @@ body {
 .ebook-text {
   width: 350px;
 }
+
 @media (max-width: 800px) {
   .ebook-text {
     margin-top: 55px;
   }
 }
+
 @media (max-width: 600px) {
   .ebook-text {
     width: 250px;
   }
 }
+
 @media (max-width: 500px) {
   .ebook-text {
     width: 190px;
   }
 }
+
 @media (max-width: 400px) {
   .ebook-text {
     width: 145px;
@@ -120,11 +131,13 @@ body {
   font-weight: bold;
   margin: 12px 0 10px 0;
 }
+
 @media (max-width: 600px) {
   .form-title {
     font-size: 20px;
   }
 }
+
 @media (max-width: 400px) {
   .form-title {
     font-size: 18px;
@@ -155,13 +168,17 @@ body {
   color: #ffffff;
   letter-spacing: 1px;
 }
+
 @media (max-width: 800px) {
+
   .ebook-type,
   .ebook-author {
     font-size: 18px;
   }
 }
+
 @media (max-width: 400px) {
+
   .ebook-type,
   .ebook-author {
     font-size: 16px;
@@ -176,26 +193,31 @@ body {
   line-height: 0.9;
   margin: 40px 0;
 }
+
 @media (max-width: 600px) {
   .ebook-title {
     font-size: 40px;
   }
 }
+
 @media (max-width: 600px) {
   .ebook-title {
     font-size: 35px;
   }
 }
+
 @media (max-width: 500px) {
   .ebook-title {
     font-size: 30px;
   }
 }
+
 @media (max-width: 400px) {
   .ebook-title {
     font-size: 25px;
   }
 }
+
 @media (max-width: 300px) {
   .ebook-title {
     font-size: 22px;
@@ -206,11 +228,13 @@ body {
   width: 130px;
   margin-bottom: 40px;
 }
+
 @media (max-width: 800px) {
   .logo {
     width: 120px;
   }
 }
+
 @media (max-width: 500px) {
   .logo {
     width: 80px;
@@ -220,16 +244,19 @@ body {
 .partner-logo {
   width: 190px;
 }
+
 @media (max-width: 600px) {
   .partner-logo {
     width: 170px;
   }
 }
+
 @media (max-width: 500px) {
   .partner-logo {
     width: 135px;
   }
 }
+
 @media (max-width: 400px) {
   .partner-logo {
     display: none;
@@ -239,6 +266,7 @@ body {
 .partner-logo-alt {
   display: none;
 }
+
 @media (max-width: 400px) {
   .partner-logo-alt {
     display: block;
@@ -251,17 +279,20 @@ body {
   margin-bottom: 20px;
   cursor: pointer;
 }
+
 @media (max-width: 800px) {
   .illustration {
     width: 145px;
     margin-bottom: 140px;
   }
 }
+
 @media (max-width: 500px) {
   .illustration {
     width: 120px;
   }
 }
+
 @media (max-width: 400px) {
   .illustration {
     width: 100px;
@@ -275,11 +306,13 @@ body {
   justify-content: space-between;
   margin-left: 100px;
 }
+
 @media (max-width: 1500px) {
   .ebook-assets {
     margin-left: 140px;
   }
 }
+
 @media (max-width: 800px) {
   .ebook-assets {
     margin-left: 0;
@@ -294,7 +327,9 @@ select {
   box-sizing: border-box;
   border-radius: 2px;
 }
+
 @media (max-width: 600px) {
+
   .form-input,
   select {
     font-size: 11px;
@@ -338,10 +373,17 @@ select {
   background-color: #372cff;
   cursor: pointer;
 }
+
 @media (max-width: 600px) {
   .submit-btn {
     font-size: 14px;
   }
+}
+
+.submit-btn:hover {
+  border: 2px solid #372cff;
+  background-color: #fff;
+  color: #372cff;
 }
 
 .phone-input {
@@ -357,6 +399,7 @@ select {
   border: 0;
   outline: none;
 }
+
 @media (max-width: 600px) {
   #phone {
     font-size: 11px;
@@ -418,11 +461,13 @@ select {
   font-weight: 700;
   color: rgb(35, 34, 34);
 }
+
 @media (max-width: 600px) {
   .decription-title {
     font-size: 25px;
   }
 }
+
 @media (max-width: 400px) {
   .decription-title {
     font-size: 20px;
@@ -432,11 +477,13 @@ select {
 .description-text {
   font-size: 18px;
 }
+
 @media (max-width: 600px) {
   .description-text {
     font-size: 16px;
   }
 }
+
 @media (max-width: 400px) {
   .description-text {
     font-size: 14px;
@@ -449,6 +496,7 @@ select {
   justify-content: space-between;
   margin-top: 30px;
 }
+
 @media (max-width: 800px) {
   .description-content {
     flex-direction: column;
@@ -461,7 +509,9 @@ select {
   display: flex;
   justify-content: center;
 }
+
 @media (max-width: 800px) {
+
   .description-image,
   .description-details {
     width: 100%;
@@ -469,20 +519,32 @@ select {
   }
 }
 
-.description-image-file {
-  width: 220px;
+.description-image-container {
   cursor: pointer;
+  background-image: url('images/partner_details.png');
+  width: 220px;
+  height: 276.5px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
-@media (max-width: 800px) {
-  .description-image-file {
-    width: 180px;
-  }
+
+.description-image-overlay {
+  opacity: 0;
+  width: 96%;
+  height: 96%;
+  background: linear-gradient(315deg, rgb(255 255 255 / 50%) 11.5%, rgb(255 255 255 / 0%) 10%);
+}
+
+.description-image-overlay:hover {
+  opacity: 1;
 }
 
 .description-details {
   flex-direction: column;
   padding: 0px 30px;
 }
+
 @media (max-width: 800px) {
   .description-details {
     padding: 0;
@@ -494,11 +556,13 @@ select {
   font-size: 21px;
   color: rgb(35, 34, 34);
 }
+
 @media (max-width: 600px) {
   .description-subtitle {
     font-size: 18px;
   }
 }
+
 @media (max-width: 400px) {
   .description-subtitle {
     font-size: 16px;
@@ -509,11 +573,13 @@ select {
   margin-bottom: 15px;
   font-size: 18px;
 }
+
 @media (max-width: 600px) {
   .description-intro {
     font-size: 16px;
   }
 }
+
 @media (max-width: 400px) {
   .description-intro {
     font-size: 14px;
@@ -525,6 +591,7 @@ select {
     font-size: 16px;
   }
 }
+
 @media (max-width: 400px) {
   .description-list {
     font-size: 14px;
@@ -545,6 +612,7 @@ select {
   height: 37px;
   cursor: pointer;
 }
+
 @media (max-width: 600px) {
   .description-btn {
     font-size: 14px;
@@ -553,10 +621,15 @@ select {
   }
 }
 
+.description-btn:hover {
+  transform: scale(1.1);
+}
+
 .card-container {
   padding: 20px 0 70px 0;
   position: relative;
 }
+
 @media (max-width: 800px) {
   .card-container {
     padding: 0 0 60px 0;
@@ -570,11 +643,13 @@ select {
   width: 12vw;
   max-width: 200px;
 }
+
 @media (max-width: 1500px) {
   .decoration {
     width: 10vw;
   }
 }
+
 @media (max-width: 1100px) {
   .decoration {
     display: none;
@@ -593,6 +668,7 @@ select {
   align-items: center;
   justify-content: space-between;
 }
+
 @media (max-width: 1100px) {
   .card-wrapper {
     flex-direction: column;
@@ -611,17 +687,20 @@ select {
   border-left: 0 solid #E0E0E0;
   box-shadow: 0 9px 10px rgba(0, 0, 0, 0.1);
 }
+
 @media (max-width: 1500px) {
   .card {
     height: 50px;
     width: 250px;
   }
 }
+
 @media (max-width: 1100px) {
   .card {
     margin-bottom: 45px;
   }
 }
+
 @media (max-width: 600px) {
   .card {
     width: 240px;
@@ -639,11 +718,13 @@ select {
   font-size: 16px;
   font-weight: bold;
 }
+
 @media (max-width: 1500px) {
   .card-text {
     font-size: 14px;
   }
 }
+
 @media (max-width: 600px) {
   .card-text {
     font-size: 12px;
@@ -656,6 +737,7 @@ select {
   justify-content: space-between;
   align-items: center;
 }
+
 @media (max-width: 1000px) {
   .footer-container {
     flex-direction: column;
@@ -665,6 +747,7 @@ select {
 .privacy-policy {
   font-size: 13px;
 }
+
 @media (max-width: 1000px) {
   .privacy-policy {
     order: 2;
@@ -672,11 +755,10 @@ select {
   }
 }
 
-
 .modal {
   display: none;
-  position: fixed; 
-  z-index: 10; 
+  position: fixed;
+  z-index: 10;
   left: 0;
   top: 0;
   width: 100%;
@@ -706,8 +788,7 @@ select {
   cursor: pointer;
 }
 
-.close:hover,
-.close:focus {
+.close:hover {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
